@@ -1,13 +1,13 @@
 body {
     background: #FFFFFF;
     position: relative;
-        width: 1440px;
-        height: 4521px;
-    font-family: 'Open Sans';
+    width: 1440px;
+    height: 4521px;
+    font-family: 'Open Sans' sans-serif;
     font-style: normal;
     font-weight: 400;
     display: flex;
-    flex-direction: column;
+    
     align-items: center;
     align-content: center;
     text-align: center;
@@ -38,8 +38,9 @@ body {
     width: 496px;
     height: 30px;
 }
-.dn-line {
-position: absolute;
+
+hr {
+    position: absolute;
     width: 970px;
     height: 0px;
     left: 235px;
@@ -60,26 +61,41 @@ position: absolute;
     left: 235px;
     top: 92px;
 }
-
 .dn-hero-title {
-    width: 120px;
+    width: 200px;
     height: 40px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
     font-weight: 700;
     font-size: 34px;
     line-height: 46px;
     text-align: center;
-   
+    
+    color: #070707;
+}
 
-    /* Black */
+p {
+    width: 480px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    
+    color: #070707;
+}
+
+h1 {
+    width: 300px;
+    height: 60px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
 
     color: #070707;
 }
  
  .dn-hero-intro {
-display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     padding: 100px 480px;
@@ -92,75 +108,53 @@ display: flex;
     left: 235px;
     top: 589px;
 
-    /* bg-gray */
-
     background: #F6F6F6;
  }
  .dn-own-info {
     display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0px;
-        gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
     
-        width: 480px;
-        height: 210px;
-        width: 480px;
-            height: 50px;
+    width: 480px;
+    height: 210px;
+    width: 480px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
         
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 25px;
-            text-align: center;
-        
-            /* Black */
-        
-            color: #070707;
+    color: #070707;
  }
  
-
-/*.dn-hero-intro
-.dn-hero-skills
-.dn-works
-.dn-hero-block {
-    background: #F6F6F6;
-    width: 970px;
-}*/
 .dn-own-info {
     display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0px;
-        gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
     
-        width: 480px;
-        height: 210px;
-        width: 480px;
-            height: 50px;
+    width: 480px;
+    height: 210px;
+    width: 480px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
         
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 25px;
-            text-align: center;
-        
-            color: #070707;
+    color: #070707;
    
 }
-
  .dn-hero-skills {
-display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0px 22px;
     gap: 50px;
-
     position: absolute;
     width: 970px;
     height: 564px;
@@ -169,16 +163,29 @@ display: flex;
 
     background: #FFFFFF;
  }
- .dn-hero-block-title {
-    display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0px;
-        gap: 20px;
-    
-        width: 250px;
-        height: 84px;
+
+ span {
+    inline-size: 200px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    text-decoration-line: underline;
+
+    color: #070707;
  }
+
+.dn-hero-block-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+
+    width: 250px;
+    height: 84px;
+ }
+
  .dn-hero-skills-rating {
     display: flex;
     flex-direction: row;
@@ -189,30 +196,32 @@ display: flex;
     width: 170px;
     height: 26px;
  }
-.dn-hero-tools {
-display: flex;
+
+ .dn-hero-block-tools {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 0px;
     gap: 97px;
-
+    
     width: 970px;
     height: 230px;
+ }
 
-} /* {
-display: flex;
+.dn-hero-tools {
+    display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0px;
     gap: 60px;
-
+    
     width: 170px;
     height: 230px;
-}*/
+}
   
 .dn-works {
-display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -229,48 +238,49 @@ display: flex;
 }
 .dn-works-page {
     display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0px;
-        gap: 70px;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 70px;
+    text-align: center;
+    width: 970px;
+    height: 1978px;
+    text-decoration-line: underline;
     
-        width: 970px;
-        height: 1978px;
 }
 
 .dn-contacts {
-display: flex;
     display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0px 3px;
-        gap: 60px;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 3px;
+    gap: 60px;
     
-        position: absolute;
-        width: 970px;
-        height: 400px;
-        left: 235px;
-        top: 4021px;
+    position: absolute;
+    width: 970px;
+    height: 400px;
+    left: 235px;
+    top: 4021px;
 }
 .dn-contact-heading {
     display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0px;
-        gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
     
-        width: 280px;
-        height: 106px;
+    width: 280px;
+    height: 106px;
 }
 .dn-links {
     display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0px;
-        gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
     
-        width: 310px;
-        height: 114px;
+    width: 310px;
+    height: 114px;
 }
 .dn-btn {
     display: flex;
@@ -297,14 +307,11 @@ display: flex;
     align-items: flex-start;
     padding: 0px;
     gap: 50px;
+    
 }
 .dn-contact-message {
-width: 200px;
+    width: 200px;
     height: 60px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 19px;
     text-align: center;
