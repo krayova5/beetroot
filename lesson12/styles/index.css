@@ -90,12 +90,5 @@
 .section__chapter-text-background {
   background: #DADADA;
  }
-.section__chapter-text-italic {
-  font-style: italic;
- }
-.section__chapter-text-bold {
-  font-weight: bold;
- }
-.section__chapter-text-underline {
-  text-decoration: underline;
- }
+
+
