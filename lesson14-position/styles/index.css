@@ -1,0 +1,125 @@
+.header { 
+  position: fixed;
+  width: 1440px;
+  height: 80px;}
+.header__block {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin: 13px 120px 0px 120px;
+ 
+}
+
+.header__block-logo {
+  margin-left: 500px
+}
+
+.header__block-navigation {
+  font-family: 'Staatliches';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.header__block-lang {
+  font-family: 'Tourney';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+.section__sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 70px;
+
+  position: fixed;
+  width: 385px;
+  height: 462px;
+  left: 120px;
+  top: 150px;
+ 
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 0px 90px;
+  gap: 70px;
+  margin: 96px 120px 0px 120px;	
+  background-image: url('../images/bg-picture.png');
+
+    position: absolute;
+      width: 785px;
+      height: 2931px;
+      left: 535px;
+      top: 150px;
+}
+
+.section__chapter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.section__chapter-head {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+  margin-top: 70px;
+}
+
+.section__chapter-head-title {
+  font-family: 'Francois One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.section__chapter-head-subtitle {
+  font-family: 'Farro';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+
+  color: #000000;
+}
+.section__chapter-text {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 48px;
+  margin-top: 40px;
+  color: #000000;
+}
+.section__chapter-text-background {
+  background: #DADADA;
+ }
+
+ .section__image {
+  position: sticky;
+    left: 812px;
+    top: 150px;
+    bottom: 2171px;
+ }
+

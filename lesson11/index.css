@@ -1,0 +1,83 @@
+
+.features { 
+	left: 125.35%;
+	right: -178.89%;
+	top: 99.22%;
+	bottom: -75.34%;
+	width: 1440px;
+	height: 510px;
+	background: linear-gradient(179.61deg, rgba(255, 229, 210, 0.629261) 0.33%, rgba(255, 244, 229, 0.0001) 99.67%);
+	transform: rotate(180deg);
+} 
+
+.features__title {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 44px;
+text-align: center;
+
+color: #2F281E;
+}
+
+.features__card {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: flex-start;
+padding: 0px;
+gap: 45px;
+}
+
+.features__card-item {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 30px;
+}
+
+.features__card-icon {
+width: 51px;
+height: 50px;
+}
+
+.features__card-item-block {
+width: 270px;
+height: 95px;
+}
+
+.features__card-item-block-title {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 27px;
+
+color: #2F281E;
+}
+
+.features__card-item-block-text {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;p
+font-size: 16px;
+line-height: 26px;
+
+color: #544837;
+}
+.features__button {
+	width: 101px;
+	height: 24px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+background: #FF9900;
+border-radius: 4px;
+color: #FFFFFF;
+text-align: center;
+}
