@@ -444,31 +444,48 @@ main {
 .photo__grid-people :nth-of-type(n+1):hover .photo__icons {
   opacity: 1;
 }
+
 .photo__grid-block1:hover {
   background: url('../images/image1.jpg');
   background-size: cover;
-}.photo__grid-block2:hover {
+}
+
+.photo__grid-block2:hover {
   background: url('../images/image2.jpg');
   background-size: cover;
-}.photo__grid-block3:hover {
+}
+
+.photo__grid-block3:hover {
   background: url('../images/image3.jpg');
   background-size: cover;
-}.photo__grid-block4:hover {
+}
+
+.photo__grid-block4:hover {
   background: url('../images/image4.jpg');
   background-size: cover;
-}.photo__grid-block5:hover {
+}
+
+.photo__grid-block5:hover {
   background: url('../images/image5.jpg');
   background-size: cover;
-}.photo__grid-block6:hover {
+}
+
+.photo__grid-block6:hover {
   background: url('../images/image6.jpg');
   background-size: cover;
-}.photo__grid-block7:hover {
+}
+
+.photo__grid-block7:hover {
   background: url('../images/image7.jpg');
   background-size: cover;
-}.photo__grid-block8:hover {
+}
+
+.photo__grid-block8:hover {
   background: url('../images/image8.jpg');
   background-size: cover;
-}.photo__grid-block9:hover {
+}
+
+.photo__grid-block9:hover {
   background: url('../images/image9.jpg');
   background-size: cover;
 }
@@ -479,37 +496,59 @@ background-size: cover;
 .photo__grid-block11:hover {
   background: url('../images/image11.jpg');
   background-size: cover;
-}.photo__grid-block12:hover {
+}
+
+.photo__grid-block12:hover {
   background: url('../images/image12.jpg');
   background-size: cover;
-}.photo__grid-block13:hover {
+}
+
+.photo__grid-block13:hover {
   background: url('../images/image13.jpg');
   background-size: cover;
-}.photo__grid-block14:hover {
+}
+
+.photo__grid-block14:hover {
   background: url('../images/image14.jpg');
   background-size: cover;
-}.photo__grid-block15:hover {
+}
+
+.photo__grid-block15:hover {
   background: url('../images/image15.jpg');
   background-size: cover;
-}.photo__grid-block16:hover {
+}
+
+.photo__grid-block16:hover {
   background: url('../images/image16.jpg');
   background-size: cover;
-}.photo__grid-block17:hover {
+}
+
+.photo__grid-block17:hover {
   background: url('../images/image17.jpg');
   background-size: cover;
-}.photo__grid-block18:hover {
+}
+
+.photo__grid-block18:hover {
   background: url('../images/image18.jpg');
   background-size: cover;
-}.photo__grid-block19:hover {
+}
+
+.photo__grid-block19:hover {
   background: url('../images/image19.jpg');
   background-size: cover;
-}.photo__grid-block20:hover {
+}
+
+.photo__grid-block20:hover {
   background: url('../images/image20.jpg');
   background-size: cover;
-}.photo__grid-block21:hover {
+}
+
+.photo__grid-block21:hover {
   background: url('../images/image21.jpg');
   background-size: cover;
-}.photo__grid-block22:hover {
+}
+
+.photo__grid-block22:hover {
   background: url('../images/image22.jpg');
   background-size: cover;
 }
