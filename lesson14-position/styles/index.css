@@ -1,14 +1,25 @@
+body {
+  position: relative;
+  width: 1440px;
+  margin: 0 auto;
+
+}
+
 .header { 
   position: fixed;
-  width: 1440px;
-  height: 80px;}
+  width: inherit;
+  height: 80px;
+  z-index: 1;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  background: #FFFFFF;
+}
+
 .header__block {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
   margin: 13px 120px 0px 120px;
- 
 }
 
 .header__block-logo {
@@ -16,7 +27,7 @@
 }
 
 .header__block-navigation {
-  font-family: 'Staatliches';
+  font-family: 'Staatliches', cursive;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -26,7 +37,7 @@
 }
 
 .header__block-lang {
-  font-family: 'Tourney';
+  font-family: 'Tourney', cursive;
   font-style: normal;
   font-weight: 600;
   font-size: 22px;
@@ -36,18 +47,30 @@
 }
 
 .section__sidebar {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 10px;
-  gap: 70px;
-
   position: fixed;
   width: 385px;
   height: 462px;
   left: 120px;
   top: 150px;
- 
+
+}
+.section__sidebar-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 70px;
+}
+.section__sidebar-list li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 0px 10px;
+  gap: 10px;
+  
+  width: 369px;
+  height: 58px;
+  border-bottom: 1px solid #BDBDBD;
 }
 
 .section {
@@ -56,14 +79,18 @@
   align-items: flex-start;
   padding: 0px 0px 90px;
   gap: 70px;
-  margin: 96px 120px 0px 120px;	
+  
   background-image: url('../images/bg-picture.png');
-
-    position: absolute;
-      width: 785px;
-      height: 2931px;
-      left: 535px;
-      top: 150px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-x: 80%;
+  background-position-y: 150%;
+  position: relative;
+  width: 785px;
+  height: 2931px;
+  left: 535px;
+  top: 150px;
+  
 }
 
 .section__chapter {
@@ -86,7 +113,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
-  line-height: 48px;
+  line-height: 28px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
@@ -118,8 +145,14 @@
 
  .section__image {
   position: sticky;
-    left: 812px;
-    top: 150px;
-    bottom: 2171px;
+  left: 56.39%;
+  right: -9.17%;
+  top: 4.87%;
+  bottom: 70.46%;
+  background-size: contain;
  }
-
+.block__heading-devider {
+  width: 100px;
+  height: 8px;
+  background-color: #000000;
+}
