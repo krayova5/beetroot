@@ -12,7 +12,7 @@
 }
 
 .header__block-navigation {
-  font-family: 'Staatliches';
+  font-family: 'Staatliches', cursive;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -22,7 +22,7 @@
 }
 
 .header__block-lang {
-  font-family: 'Tourney';
+  font-family: 'Tourney', cursive;
   font-style: normal;
   font-weight: 600;
   font-size: 22px;
@@ -57,7 +57,7 @@
 }
 
 .section__chapter-head-title {
-  font-family: 'Francois One';
+  font-family: 'Francois One', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -69,7 +69,7 @@
 }
 
 .section__chapter-head-subtitle {
-  font-family: 'Farro';
+  font-family: 'Farro',sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 30px;
@@ -79,7 +79,7 @@
   color: #000000;
 }
 .section__chapter-text {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
