@@ -1,8 +1,7 @@
 body {
-  position: relative;
+  
   width: 1440px;
   margin: 0 auto;
-
 }
 
 .header { 
@@ -52,8 +51,8 @@ body {
   height: 462px;
   left: 120px;
   top: 150px;
-
 }
+
 .section__sidebar-list {
   display: flex;
   flex-direction: column;
@@ -61,6 +60,7 @@ body {
   padding: 10px;
   gap: 70px;
 }
+
 .section__sidebar-list li {
   display: flex;
   flex-direction: row;
@@ -79,18 +79,18 @@ body {
   align-items: flex-start;
   padding: 0px 0px 90px;
   gap: 70px;
-  
-  background-image: url('../images/bg-picture.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position-x: 80%;
-  background-position-y: 150%;
+
   position: relative;
   width: 785px;
   height: 2931px;
   left: 535px;
   top: 150px;
   
+  background-image: url('../images/bg-picture.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-x: 80%;
+  background-position-y: 150%;  
 }
 
 .section__chapter {
@@ -109,7 +109,7 @@ body {
 }
 
 .section__chapter-head-title {
-  font-family: 'Francois One';
+  font-family: 'Francois One',sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -121,7 +121,7 @@ body {
 }
 
 .section__chapter-head-subtitle {
-  font-family: 'Farro';
+  font-family: 'Farro', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 30px;
@@ -131,7 +131,7 @@ body {
   color: #000000;
 }
 .section__chapter-text {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
