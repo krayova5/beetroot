@@ -1,0 +1,126 @@
+body {
+font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    background: #3B3F45;
+}
+* {
+    transition: all .1s ease-in;
+}
+.shop-headings {
+    position: absolute;
+        width: 793px;
+        height: 82px;
+        left: 0px;
+        top: 0px;
+background: #4A4F56;
+}
+h1 {
+    position: absolute;
+    width: 276px;
+    height: 28px;
+    left: 247px;
+    top: 19px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+
+    color: #FF8984;
+}
+h2 {
+    position: absolute;
+    width: 139px;
+    height: 19px;
+    left: 316px;
+    top: 51px;
+   
+    display: flex;
+    align-items: center;
+    
+    color: #FF8984;
+}
+.shop-form {
+    background: #3B3F45;
+}
+
+
+.shop-point1 {
+    position: absolute;
+    width: 534px;
+    height: 45px;
+    left: 129px;
+    top: 102px;
+    background: #88839E;
+}
+.shop-point2 {
+    position: absolute;
+    width: 534px;
+    height: 45px;
+    left: 129px;
+    top: 147px;
+    background: #88839E;
+}
+.shop-point3 {
+position: absolute;
+    width: 534px;
+    height: 45px;
+    left: 129px;
+    top: 192px;
+background: #88839E;
+}
+.shop-point4 {
+position: absolute;
+    width: 534px;
+    height: 45px;
+    left: 129px;
+    top: 237px;
+background: #88839E;
+}
+.shop-point5 {
+position: absolute;
+    width: 534px;
+    height: 45px;
+    left: 129px;
+    top: 282px;
+background: #88839E;
+}
+.shop-point6 {
+position: absolute;
+    width: 534px;
+    height: 45px;
+    left: 129px;
+    top: 327px;
+background: #88839E;
+}
+
+.shop-button {
+    position: absolute;
+        width: 534px;
+        height: 45px;
+        left: 129px;
+        top: 417px;
+        font-size: 18px;
+        line-height: 21px;        
+        align-items: center;
+        background: #4A4F56;
+        color: #FF8984;
+        text-align: center;
+}
+.shop-list div:nth-child(2n) {
+background: #7A7593;
+}
+.shop-list div:hover {
+    border: 3px;
+    border-bottom: #FFFFFF;
+    border-top: #FFFFFF;
+   
+    background: #625E77;
+}
+
+input:checked + span {
+    text-decoration-line: line-through;
+}

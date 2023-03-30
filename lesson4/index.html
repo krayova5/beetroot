@@ -5,88 +5,129 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main</title>
+    <link rel="stylesheet" href="./styles/normolize.css">
+    <link rel="stylesheet" href="./styles/style.css">
   </head>
   <body>
   <header>
-    <nav>
-      <ul>
+    <nav class="dn-nav">
+      <ul class="dn-nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About me</a></li>
         <li><a href="#skill">Skills</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contacts</a></li>
       </ul>
-      <hr>
+      <hr/>
      </nav>
   </header>
   <main>
-    <div id="home">
-      <h1>Denis Novik</h1>
-      <img src="./images/photox940.jpg" alt="">
-    </div>
-    <div id="about">
-      <h2>About me</h2>
-      <p>I'm interested in design and everything connected with it.</p>
-      <p>Hi, I'm Denis – UX/UI designer from Minsk.
-      <p>I'm studying at courses "Web and mobile design
-      interfaces" in IT-Academy.</p>
-      <p>Ready to implement excellent projects
-      with wonderful people.</p>
-    </div>
-    <div id="skill">
-      <h2>Skills</h2>
-      <p>I work in such programs as</p>
-      <img src="./images/Ps.png" alt="Adobe Photoshop">
-      <p>Adobe Photoshop</p><br>
-      <img src="./images/Vector.png" alt="">
-      <img src="./images/Vector.png" alt="">
-      <img src="./images/Vector1.png" alt="">
-      <img src="./images/Vector1.png" alt="">
-      <img src="./images/Vector1.png" alt=""><br>
-      <img src="./images/Ai.png" alt="Adobe Illustrator">
-      <p>Adobe Illustrator</p><br>
-      <img src="./images/Vector.png" alt="">
-      <img src="./images/Vector.png" alt="">
-      <img src="./images/Vector1.png" alt="">
-      <img src="./images/Vector1.png" alt="">
-      <img src="./images/Vector1.png" alt=""><br>
-      <img src="./images/Ae.png" alt="Adobe After Effects">
-      <p>Adobe After Effects</p><br>
-      <img src="./images/Vector.png" alt="">
-      <img src="./images/Vector.png" alt="">
-      <img src="./images/Vector1.png" alt="">
-      <img src="./images/Vector1.png" alt="">
-      <img src="./images/Vector1.png" alt=""><br>
-      <img src="./images/Figma.png" alt="Figma">
-      <p>Figma</p><br>
-      <img src="./images/Vector.png" alt="">
-      <img src="./images/Vector.png" alt="">
-      <img src="./images/Vector1.png" alt="">
-      <img src="./images/Vector1.png" alt="">
-      <img src="./images/Vector1.png" alt=""><br>
-    </div>
-    <div id="portfolio">
-      <h2>Portfolio</h2>
-      <img src="./images/Fashion-Store.jpg" alt="">
-      <p>Online fashion store - Homepage</p>
-      <img src="./images/reebok_web.jpg" alt="">
-      <p>Reebok Store - Concept</p>
-      <img src="./images/braun-landing.jpg" alt="">
-      <p>Braun Landing Page - Concept</p>
-    </div>
+    <section>
+      <div class="dn-hero-block" id="home">
+        <h1>Denis Novik</h1>
+        <img src="./images/photox940.jpg" alt="">
+      </div>
+      <div class="dn-hero-intro" id="about">
+        <h2 class="dn-hero-title">About me</h2>
+        <p class="dn-own-info">Hi, I'm Denis – UX/UI designer from Minsk.
+        I'm interested in design and everything connected with it.</p>
+        <p class="dn-own-info">I'm studying at courses "Web and mobile design
+        interfaces" in IT-Academy.</p>
+        <p class="dn-own-info">Ready to implement excellent projects <br/>
+          with wonderful people.</p>
+      </div>
+    </section>
+    <section>
+      <div class="dn-hero-skills" id="skill">
+        <div class="dn-hero-block-title">
+          <h2 class="dn-hero-title">Skills</h2>
+          <p>I work in such programs as</p>
+        </div>
+        <div class="dn-hero-block-tools">
+          <div class="dn-hero-tools">
+            <img src="./images/Ps.png" alt="Adobe Photoshop">
+            <p>Adobe <br/> Photoshop</p>
+            <ul class="dn-hero-skills-rating">
+              <li><img src="./images/Vector.png" alt="rating star1"></li>
+              <li><img src="./images/Vector.png" alt="rating star1"></li>
+              <li><img src="./images/Vector1.png" alt="rating star1"></li>
+              <li><img src="./images/Vector1.png" alt="rating star2"></li>
+              <li><img src="./images/Vector1.png" alt="rating star2"></li>
+            </ul>
+          </div>
+          <div class="dn-hero-tools">
+            <img src="./images/Ai.png" alt="Adobe Illustrator">
+            <p>Adobe <br> Illustrator</p>
+            <ul class="dn-hero-skills-rating">
+              <li><img src="./images/Vector.png" alt="rating star1"></li>
+              <li><img src="./images/Vector.png" alt="rating star1"></li>
+              <li><img src="./images/Vector.png" alt="rating star1"></li>
+              <li><img src="./images/Vector1.png" alt="rating star1"></li>
+              <li><img src="./images/Vector1.png" alt="rating star2"></li>
+            </ul>
+          </div>
+          <div class="dn-hero-tools">
+            <img src="./images/Ae.png" alt="Adobe After Effects">
+            <p>Adobe <br/> After Effects</p>
+            <ul class="dn-hero-skills-rating">
+              <li><img src="./images/Vector.png" alt="rating star1"></li>
+              <li><img src="./images/Vector.png" alt="rating star1"></li>
+              <li><img src="./images/Vector.png" alt="rating star1"></li>
+              <li><img src="./images/Vector.png" alt="rating star1"></li>
+              <li><img src="./images/Vector1.png" alt="rating star1"></li>
+            </ul>
+          </div>
+          <div class="dn-hero-tools">
+            <img src="./images/Figma.png" alt="Figma">
+            <p>Figma<br/><br/></p>
+            <ul class="dn-hero-skills-rating">
+              <li><img src="./images/Vector.png" alt="rating star1"></li>
+              <li><img src="./images/Vector.png" alt="rating star1"></li>
+              <li><img src="./images/Vector.png" alt="rating star2"></li>
+              <li><img src="./images/Vector.png" alt="rating star2"></li>
+              <li><img src="./images/Vector.png" alt="rating star2"></li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    <section>
+      <div class="dn-works" id="portfolio">
+        <h2 class="dn-hero-title">Portfolio</h2>
+        <div class="dn-works-pages">
+          <img src="./images/Fashion-Store.jpg" alt="">
+          <span>Online fashion store - <br/> Homepage</span>
+        </div class="dn-works-pages">
+        <div class="dn-works-pages">
+          <img src="./images/reebok_web.jpg" alt="">
+          <span>Reebok Store - Concept</span> 
+        </div>
+        <div class="dn-works-pages">
+          <img src="./images/braun-landing.jpg" alt="">
+          <span>Braun Landing Page - Concept</span> 
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
-    <div id="contact">
-      <h2>Contacts</h2>
-      <p>Want to know more or just chat?
-      You are welcome!
-      </p>
-      <button type="button">Send message</button><br> 
-      <img src="./images/linkedin.png" alt="linkedin">
-      <img src="./images/instagram.png" alt="instagram">
-      <img src="./images/behance.png" alt="behance">
-      <img src="./images/dribbble.png" alt="dribbble">
-      <p>
+    <div class="dn-contacts" id="contact">
+      <div class="dn-contact-heading">
+        <h2 class="dn-hero-title">Contacts</h2>
+        <p>Want to know more or just chat?
+          You are welcome!
+        </p>
+      </div>
+      <div class="dn-links">
+        <button class="dn-btn" type="button">Send message</button><br>
+        <ul class="dn-social-groups">
+          <li><a href="http://"><img src="./images/linkedin.png" alt="linkedin"></a></li>
+          <li><a href="http://"><img src="./images/instagram.png" alt="instagram"></a></li>
+          <li><a href="http://"><img src="./images/behance.png" alt="behance"></a></li>
+          <li><a href="http://"><img src="./images/dribbble.png" alt="dribbble"></a></li>
+        </ul>
+      </div>
+      <p class="dn-contact-message">
       Like me on LinkedIn, Instagram, Behance, Dribble
       </p>
     </div>
