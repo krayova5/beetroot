@@ -1,63 +1,112 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-
-    <title>Productly</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productly</title>  
   
-   	<link rel="stylesheet" type="text/css" src="./normolize.css">
-    <link rel="stylesheet" type="text/css" src="./index.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
   </head>
-
   <body>
- 
-   <!-- Main-->
-
-    <main>
-    	<section class="features">
-    		<h2 class="features__title">We design tools to unveil your superpowers</h2>
-       	<ul class="features__card">
-          <li class="features__card-item">
-          	<img class="features__card-icon" src=""/>
-          	<div class="features__card-item-block">
-          		<h3 class="features__card-item-block-title">First click tests</h3>
-          		<p class="features__card-item-block-text">While most people enjoy casino gambling.</p>
-          	</div>
+		<header class="header">
+      <div class="header__content">
+        <img
+          class="header__content-logo"
+          src="./assets/images/Logo.png"
+          alt="logo"
+        />
+        <ul class="header__menu-list">
+          <li class="header__menu-list-item">
+            <a class="header__menu-list-item-active" href="http://#">Product</a>
           </li>
-          <li class="features__card-item">
-          	<img class="features__card-icon" src=""/>
-          	<div class="features__card-item-block">
-          		<h3 class="features__card-item-block-title">Design surveys</h3>
-          		<p class="features__card-item-block-text">Sports betting, lottery and bingo playing for the fun</p>
-          	</div>
+          <li class="header__menu-list-item">
+            <a class="header__menu-list-item-active" href="http://#"
+              >Customers</a
+            >
           </li>
-          <li class="features__card-item">
-          	<img class="features__card-icon" src=""/>
-          	<div class="features__card-item-block">
-          		<h3 class="features__card-item-block-title">Preference tests</h3>
-          		<p class="features__card-item-block-text">The Myspace page defines the individual.</p>
-          	</div>
+          <li class="header__menu-list-item">
+            <a class="header__menu-list-item-active" href="http://#">Pricing</a>
           </li>
-          <li class="features__card-item">
-          	<img class="features__card-icon" src=""/>
-          	<div class="features__card-item-block">
-          		<h3 class="features__card-item-block-title">Five second tests</h3>
-          		<p class="features__card-item-block-text">Personal choices and the overall personality of the person.</p>
-          	</div>
+          <li class="header__menu-list-item">
+            <a class="header__menu-list-item-active" href="http://#"
+              >Resources</a
+            >
+          </li>
+        </ul>
+        <div class="header__buttons">
+          <button class="header__buttons-button" type="button">Sign In</button>
+          <button
+            class="header__buttons-button header__buttons-orange"
+            type="button"
+          >
+            Sign Up
+          </button>
+        </div>
+      </div>
+  	</header>
+    <main class="main">
+      <section class="main__section">
+        <div class="main__section-content">
+          <div class="main__section-content-text">
+            <h1 class="main__section-content-text-title">
+              The Design Thinking superpowers
+            </h1>
+            <p class="main__section-content-text-paragraph">
+              Tools, tutorials, design and innovation experts, all in one place!
+              The most intuitive way to imagine your next user experience.
+            </p>
+          </div>
+          <button class="main__section-content-button">Get started</button>
+        </div>
+        <div class="main__section-images">
+          <img src="./assets/images/Image.png" alt="group of people" />
+        </div>
+      </section>
+    	<section class="main__features">
+    		<h2 class="main__features-title">We design tools to unveil your superpowers</h2>
+          <ul class="main__features-card">
+          <li class="main__features-card-item">
+            <img class="main__features-card-icon" src="./assets/images/icon-image.png"/>
+            <div class="main__features-card-item-block">
+              <h3 class="main__features-card-item-block-title">First click tests</h3>
+              <p class="main__features-card-item-block-text">While most people enjoy casino gambling.</p>
+            </div>
+          </li>
+          <li class="main__features-card-item">
+            <img class="main__features-card-icon" src="./assets/images/icon-heart.png"/>
+            <div class="main__features-card-item-block">
+              <h3 class="main__features-card-item-block-title">Design surveys</h3>
+              <p class="main__features-card-item-block-text">Sports betting, lottery and bingo playing for the fun</p>
+            </div>
+          </li>
+          <li class="main__features-card-item">
+            <img class="main__features-card-icon" src="./assets/images/icon-sand.png"/>
+            <h3 class="main__features-card-item-block-title">Preference tests</h3>
+            <div class="main__features-card-item-block">
+              <p class="main__features-card-item-block-text">The Myspace page defines the individual.</p>
+            </div>
+          </li>
+          <li class="main__features-card-item">
+            <img class="main__features-card-icon" src="./assets/images/icon-point.png"/>
+            <div class="main__features-card-item-block">
+              <h3 class="main__features-card-item-block-title">Five second tests</h3>
+              <p class="main__features-card-item-block-text">Personal choices and the overall personality of the person.</p>
+            </div>
           </li>
          </ul>
-         <button class="features__button" type="button">Sign up Now</button>We design tools to unveil your superpowers</h2> 	
+         <button class="main__button" type="button">Sign up Now</button>
     	</section>
-    </main>
-
+		</main>
 		<footer class="footer">
+      <hr/><br/>
     <div class="footer__block">
       <div class="footer__block-item">
-      <img class="features__block-logo" src=""/>
+      <img class="features__block-logo" src="./assets/images/Logo.png" alt="logo"/>
       </div>
       <div class="footer__block-item"> 
         <h4 class="footer__block-item-title">Quick Links</h4> 
@@ -77,11 +126,11 @@
         	<li class="footer__card-item">Terms of Service</li>
         </ul>     
       </div> 
-      <div class="footer__block-item">
+      <div class="footer__block-item-form">
       	<form class="footer__block-item-form">
       		<h4 class="footer__block-item-title">Knowing you're always on the best energy deal.</h4>
       		<input type="phone" name="phone" value="" placeholder="Enter your phone number"></input> 
-      		<button class="footer__button" type="submit">Sign up Now</button>
+      		<button class="main__button footer__button" type="submit">Sign up Now</button>
       	</form>
       </div>  
     </footer>
