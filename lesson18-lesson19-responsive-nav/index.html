@@ -7,18 +7,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Productly</title>
 
-  <link rel="stylesheet" href="./styles/normalize.css">
-  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./styles/css/normalize.css">
+  <link rel="stylesheet" href="./styles/css/index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Poppins:wght@700&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
 </head>
 
 <body>
   <header class="header">
     <div class="header__content">
       <img class=" logo header__content-logo" src="./assets/images/Logo.png" alt="logo" />
+      <div class="burger-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <ul class="header__menu-list">
         <li class="header__menu-list-item">
           <a class="header__menu-list-item-active" href="http://#">Product</a>
@@ -33,6 +40,8 @@
           <a class="header__menu-list-item-active" href="http://#">Resources</a>
         </li>
       </ul>
+       <script src="./script.js">
+    </script>
       <div class="header__buttons">
         <button class="header__buttons-button" type="button">Sign In</button>
         <button class="header__buttons-button header__buttons-orange" type="button">
@@ -40,6 +49,7 @@
         </button>
       </div>
     </div>
+
   </header>
   <main class="main">
     <section class="main__section">
@@ -87,18 +97,19 @@
           <img class="main__features-card-icon" src="./assets/images/icon-point.png" />
           <div class="main__features-card-item-block">
             <h3 class="main__features-card-item-block-title">Five second tests</h3>
-            <p class="main__features-card-item-block-text">Personal choices and the overall personality of the person.</p>
+            <p class="main__features-card-item-block-text">Personal choices and the overall personality of the person.
+            </p>
           </div>
         </li>
       </ul>
       <button class="main__button" type="button">Sign up Now</button>
     </section>
-    
+
   </main>
   <footer class="footer">
-    
+
     <div class="footer__block">
-      
+
       <div class="footer__block-item">
         <img class="logo footer__block-logo" src="./assets/images/Logo.png" alt="logo" />
       </div>

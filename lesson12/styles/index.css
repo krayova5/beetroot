@@ -4,15 +4,14 @@
   justify-content: space-between;
   align-items: center;
   margin: 13px 120px 0px 120px;
- 
 }
 
 .header__block-logo {
-  margin-left: 500px
+  margin-left: 500px;
 }
 
 .header__block-navigation {
-  font-family: 'Staatliches', cursive;
+  font-family: "Staatliches", cursive;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -22,7 +21,7 @@
 }
 
 .header__block-lang {
-  font-family: 'Tourney', cursive;
+  font-family: "Tourney", cursive;
   font-style: normal;
   font-weight: 600;
   font-size: 22px;
@@ -37,8 +36,8 @@
   align-items: flex-start;
   padding: 0px 0px 90px;
   gap: 70px;
-  margin: 96px 120px 0px 120px;	
-  background: #FFFFFF;
+  margin: 96px 120px 0px 120px;
+  background: #ffffff;
 }
 
 .section__chapter {
@@ -57,7 +56,7 @@
 }
 
 .section__chapter-head-title {
-  font-family: 'Francois One', sans-serif;
+  font-family: "Francois One", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -69,7 +68,7 @@
 }
 
 .section__chapter-head-subtitle {
-  font-family: 'Farro',sans-serif;
+  font-family: "Farro", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 30px;
@@ -78,8 +77,9 @@
 
   color: #000000;
 }
+
 .section__chapter-text {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
@@ -87,8 +87,7 @@
   margin-top: 40px;
   color: #000000;
 }
+
 .section__chapter-text-background {
-  background: #DADADA;
- }
-
-
+  background: #dadada;
+}
