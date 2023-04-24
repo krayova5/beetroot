@@ -14,34 +14,34 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Poppins:wght@700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   
+
 </head>
 
 <body>
   <header class="header">
     <div class="header__content">
       <img class=" logo header__content-logo" src="./assets/images/Logo.png" alt="logo" />
-      <div class="burger-nav">
+      <div class="menu-btn">
         <span></span>
         <span></span>
         <span></span>
       </div>
-      <ul class="header__menu-list">
-        <li class="header__menu-list-item">
-          <a class="header__menu-list-item-active" href="http://#">Product</a>
-        </li>
-        <li class="header__menu-list-item">
-          <a class="header__menu-list-item-active" href="http://#">Customers</a>
-        </li>
-        <li class="header__menu-list-item">
-          <a class="header__menu-list-item-active" href="http://#">Pricing</a>
-        </li>
-        <li class="header__menu-list-item">
-          <a class="header__menu-list-item-active" href="http://#">Resources</a>
-        </li>
-      </ul>
-       <script src="./script.js">
-    </script>
+      <nav class="header__menu-nav">
+        <ul class="header__menu-list">
+          <li class="header__menu-list-item">
+            <a class="header__menu-list-item-active" href="http://#">Product</a>
+          </li>
+          <li class="header__menu-list-item">
+            <a class="header__menu-list-item-active" href="http://#">Customers</a>
+          </li>
+          <li class="header__menu-list-item">
+            <a class="header__menu-list-item-active" href="http://#">Pricing</a>
+          </li>
+          <li class="header__menu-list-item">
+            <a class="header__menu-list-item-active" href="http://#">Resources</a>
+          </li>
+        </ul>
+      </nav>
       <div class="header__buttons">
         <button class="header__buttons-button" type="button">Sign In</button>
         <button class="header__buttons-button header__buttons-orange" type="button">
@@ -49,7 +49,14 @@
         </button>
       </div>
     </div>
-
+    <script type="text/javascript">
+      let menuBtn = document.querySelector('.menu-btn');
+      let menu = document.querySelector('.header__menu-nav');
+      menuBtn.addEventListener('click', function () {
+        menuBtn.classList.toggle('active');
+        menu.classList.toggle('active');
+      })
+    </script>
   </header>
   <main class="main">
     <section class="main__section">

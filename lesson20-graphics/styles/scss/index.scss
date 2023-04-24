@@ -1,7 +1,7 @@
 @import url('./var.scss');
+
 body {
   max-width: 1440px;
-  margin: 0 auto;
 }
 
 .header {
@@ -23,7 +23,6 @@ body {
 }
 
 .content {
-  max-width: 1170px;
   margin: 0 135px 90px 135px;
 }
 
@@ -69,8 +68,10 @@ body {
 }
 
 .part {
+
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
 
   &__title {
     font-family: "Red Hat Display", sans-serif;
@@ -99,7 +100,7 @@ body {
 
 .footer {
   background: #f4f4f4;
-  width: 100%;
+  padding-bottom: 50px;
 }
 
 .footer-wrapper {
@@ -184,14 +185,19 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .header {margin: 0 33px 0 33px;}
+  .header {
+    margin: 0 33px 0 33px;
+  }
+
   .content {
     margin: 50px 33px 90px 33px;
   }
+
   .content__screen-title {
     font-size: 33px;
     line-height: 50px;
   }
+
   .footer {
     display: flex;
     flex-direction: column;
@@ -199,11 +205,13 @@ body {
     padding: 50px 0px;
     gap: 40px;
   }
+
   .footer-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .footer__cta {
     display: flex;
     flex-direction: column;
@@ -216,6 +224,7 @@ body {
       margin-top: 20px;
     }
   }
+
   .footer__cta-contacts {
     display: flex;
     flex-direction: column;
@@ -224,26 +233,36 @@ body {
     padding: 0px;
     gap: 15px;
   }
+
   .footer__socials {
     justify-content: center;
   }
+
   .footer__text {
     margin-top: 40px;
   }
 }
+
 @media screen and (max-width: 320px) {
   .content__screen-title {
     font-size: 30px;
   }
+
   .part__title {
     font-size: 26px;
   }
+
   .footer__cta-slogan {
     font-size: 32px;
     line-height: 42px;
   }
+
   .footer__text {
     font-size: 16px;
     text-align: center;
+  }
+
+  .content {
+    margin: 50px 0;
   }
 }

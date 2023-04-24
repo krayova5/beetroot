@@ -2,7 +2,7 @@ body {
   max-width: 1440px;
   width: 100%;
   height: 100vh;
-  margin: 0 auto;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,6 +83,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 20px;
 }
 
 .main__section {
@@ -141,9 +142,11 @@ body {
 .main__features {
   min-width: 100%;
   min-height: 510px;
-  background: linear-gradient(179.61deg,
-      rgba(255, 229, 210, 0.629261) 0.33%,
-      rgba(255, 244, 229, 0.0001) 99.67%);
+  background: linear-gradient(
+    179.61deg,
+    rgba(255, 229, 210, 0.629261) 0.33%,
+    rgba(255, 244, 229, 0.0001) 99.67%
+  );
 
   background-image: url("../assets/images/bg.png");
   background-size: cover;
@@ -298,7 +301,6 @@ input {
 
 .burger-nav {
   display: none;
-
 }
 
 @media screen and (max-width: 992px) {
@@ -336,9 +338,90 @@ input {
     margin-left: 10px;
     margin-right: 10px;
   }
+
+  /*-----------------------Burger navigation---------------*/
+  .menu-btn {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+  }
+
+  .menu-btn span {
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #222222;
+    transition: all 0.5s;
+  }
+
+  .menu-btn span:nth-of-type(2) {
+    top: calc(50% - 5px);
+  }
+
+  .menu-btn span:nth-of-type(3) {
+    top: calc(50% + 5px);
+  }
+
+  /*----------header menu----------*/
+
+  .header__menu-nav {
+    position: fixed;
+    top: 105px;
+    right: -30px;
+    width: 25%;
+    height: 30%;
+    border: 1px solid #bcd0e5;
+    border-radius: 4px;
+    color: #2f281e;
+    background-color: #ff9900;
+
+    margin-right: 25px;
+    transform: translateX(100%);
+    transition: transform 0.7s;
+  }
+
+  .header__menu-nav.active {
+    transform: translateX(0);
+  }
+
+  .header__menu-nav li {
+    list-style-type: none;
+  }
+
+  .header__menu-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*--------------Dagger-------*/
+
+  .menu-btn.active span:nth-of-type(1) {
+    display: none;
+  }
+
+  .menu-btn.active span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(45deg);
+  }
+
+  .menu-btn.active span:nth-of-type(3) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(-45deg);
+  }
 }
 
+/*------------------------------------*/
+
 @media only screen and (max-width: 690px) {
+  body {
+    padding: 0 10px;
+  }
+
   .main__section-content-text-title {
     font-size: 34px;
   }
@@ -356,56 +439,5 @@ input {
   .footer__block {
     flex-direction: column;
     align-items: center;
-  }
-
-  .burger-nav {
-    display: block;
-    width: 30px;
-    height: 20px;
-    position: relative;
-
-  }
-
-  .burger-nav span {
-    position: absolute;
-    background-color: #ff9900;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    left: 0;
-    top: 10px;
-  }
-
-  .burger-nav:before,
-  .burger-nav:after {
-    content: '';
-    background-color: #ff9900;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    left: 0;
-  }
-
-  .burger-nav:before {
-    top: 0;
-  }
-
-  .burger-nav:after {
-    bottom: 0;
-  }
-
-  .header__menu-list {
-    position: fixed;
-    top: 50px;
-    right: 0;
-    width: 25%;
-    height: 30%;
-    border-radius: 10px;
-    color: #2f281e;
-    background-color: #ff9900;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-    margin-right: 5px;
   }
 }
