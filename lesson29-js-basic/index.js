@@ -12,8 +12,30 @@ const userNameFive = 'Nancy'*/
 
 console.log(userNameTwo);
 
-const NumberOne = 5;
-const NumberTwo = 6;
-const NumberThree = 6;
+//Task 1
+let userName = prompt("What is your name ?");
+alert ('Hello,' + userName);
 
-console.log( "Середнє арифметичне:"(NumberOne + NumberTwo + NumberThree)/3 );
+//Task 2
+const currentYear = 2023;
+let userAge = prompt("What year were you born?");
+alert ("You are" + (currentYear-userAge));
+
+//Task 3
+let sideSquare = prompt("Write any length of the side of the square");
+alert("Perimeter of a square is" + (sideSquare*4));
+
+//Task 4
+let radius = prompt ("Write any radius of the circle");
+alert ("Area of a circle is" + (Math.PI * (radius**2)));
+
+//Task 5
+let distance = prompt("How many kilometers are from London to Birmingham? ");
+let time = prompt("How many time are you need to travel?");
+alert("You speed must be " + distance / time + "km/h");
+
+//Task 6
+const currencyRate = 0.868;
+let dollarSum = prompt("Insert USD...");
+alert ("EUR :" + dollarSum * currencyRate);
+ 
