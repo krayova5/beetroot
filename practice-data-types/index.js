@@ -69,3 +69,36 @@ email === adminEmail
   console.log(`I don't know you ${email}`);
 
   const mark = prompt("Your mark is ...")*/
+
+/*const dog = {
+paws: 4,
+tail: 1,
+color: "grey",
+breed: "terrier",
+name: "Bob",
+sound: () => {
+  console.log("uuu-uuu");
+},
+}*/
+/*const doggy = {
+  name: "Rox",
+  color: "brown",
+  paws: { right: 2, left: 2, },
+  toys: [],
+
+  sound: () => {
+    console.log('Гав-гав!');
+  },
+
+  giveToy(newToy) {
+    this.toys.push(newToy)
+  },
+
+  showToy() {
+    console.log(this.toys);
+  },
+
+  takeToy() {
+    this.toys = [];
+  }
+}
