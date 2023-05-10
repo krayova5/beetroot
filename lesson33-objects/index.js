@@ -24,12 +24,20 @@ const userCar = {
   
   checkDriver(someDriver) {
     this.drivers.includes(someDriver);
+    
  },
+
  } 
+userCar.showCar();
+
+userCar.giveDriver('Bill');
+
+userCar.checkDriver("Bob");
+
 
 let timeCar = (distance) => (distance / userCar.speed).toFixed(1);
 let n;
-if ( n = 1, timeCar == 4 * n) {
+if ( n = 1, timeCar == n * 4) {
   timeCar = timeCar + 1 * n;
 }
 console.log(timeCar(1050));
@@ -38,15 +46,10 @@ let amountFuel = (distance) => (distance * userCar.fuel / 100).toFixed(1);
 
 console.log(amountFuel(1050));
 
-userCar.showCar();
 
-for (let key in userCar) {
-  console.log(userCar[key]);
-};
 
-userCar.giveDriver('Greg');
-
-userCar.checkDriver('Steve');
+/*for (let key in userCar) {
+  console.log(userCar[key]);};*/
 
 
 

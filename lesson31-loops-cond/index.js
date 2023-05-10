@@ -71,21 +71,22 @@ console.log(total);
 
 /*Task 4 Запитай у користувача 2 числа і знайди найбільший спільний дільник.*/
 
-/*const firstNum = +prompt("Set first number.");
-const secondNum = +prompt("Set second number.");
+let oneNum = +prompt("Set first number.");
+let twoNum = +prompt("Set second number.");
+let threeNum;
 
+while (oneNum !== twoNum) {
+  if (oneNum > twoNum) {
+    oneNum = oneNum - twoNum;
+  } else if (oneNum < twoNum) {
+    twoNum = twoNum - oneNum;
+  } else 
+    {threeNum = oneNum;
+    oneNum = twoNum;
+    twoNum = threeNum;
+  }
 
-while (firstNum !== secondNum) {
-  let nsd;
-  if (firstNum > secondNum) {
-    firstNum = firstNum - secondNum;
-  } else if (firstNum < secondNum) {
-    secondNum = secondNum - firstNum;
-  } else (firstNum === secondNum); {
-     nsd = firstNum === secondNum;
-    console.log(nsd);
-  } 
-}
+} console.log(threeNum);
 
 /*Task 5 Запитай у користувача число і виведи всі дільники цього числа.*/
 
@@ -95,44 +96,3 @@ for (let item = 1; item <= userNum; item++) {
     console.log(`Дільники: ${item}`);
   }
 }
- /* const usersAge = { Randi: 4, Godfrey: 39, Lelia: 45, Jacey: 74, Keira: 30 };
-
-for( const item in usersAges)
-console.log(`Object key: ${item}; "object value:" ${usersAges[item]}`);
-
-
-/*const someString = [
-'H', 'e', 'l', 'l',
-'o', ' ', 'W', 'o',
-'r', 'l', 'd'
-];
-for (const item of someString) {
-console.log(item);
-}
-const numbersList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-let sum = 0
-for (const item of numbersList) {
-sum = sum + item
-//sum += item
-}
-console.log(sum);
-
-const fruit = "watermelon";
-
-fruit === "watermelon"
-/*? console.log("This is watermelon")
-:console.log("Other fruit");
-
-fruit !== "watermelon"
-/*? console.log("Other fruit")
-: console.log("This is watermelon");
-
-const email = "someEmail@gmail.com";
-const adminEmail = "admin@gmail.com";
-
-email === adminEmail
-/*? console.log("Hello user"):
-console.log(`I don't know you ${email}`);
-
-const mark = prompt("Your mark is ...")*/
-

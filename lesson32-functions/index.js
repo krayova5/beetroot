@@ -62,3 +62,7 @@ console.log(showNumber(1, 6, 1));
 let getRectArea = (width, height = width) => width * height;
 
 console.log(getRectArea(5));
+
+
+
+
