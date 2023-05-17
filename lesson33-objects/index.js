@@ -11,46 +11,46 @@ const userCar = {
   speed: 100,
   volume: 40,
   fuel: 15,
-  drivers: ['Max', 'John', 'Steve', 'Bob'],
+  drivers: ["Max", "John", "Steve", "Bob"],
 
-  showCar() { 
-    console.log(userCar); 
+  showCar() {
+    console.log(userCar);
   },
-  
+
   giveDriver(newDriver) {
     this.drivers.push(newDriver);
-    
   },
-  
+
   checkDriver(someDriver) {
     this.drivers.includes(someDriver);
-    
- },
+  },
 
- } 
+  tripCar(distance) {
+    let timeCar;
+    timeCar = distance / this.speed;
+    let rest = Math.floor(timeCar / 4);
+    timeCar = timeCar + rest;
+    return timeCar;
+  },
+  amountFuel(distance) {
+    let totalFuel;
+    totalFuel = (distance * this.fuel / 100).toFixed(1);
+    return totalFuel;
+  },
+};
 userCar.showCar();
 
-userCar.giveDriver('Bill');
+userCar.giveDriver("Leon");
 
-userCar.checkDriver("Bob");
+userCar.checkDriver("Max");
 
+userCar.tripCar();
 
-let timeCar = (distance) => (distance / userCar.speed).toFixed(1);
-let n;
-if ( n = 1, timeCar == n * 4) {
-  timeCar = timeCar + 1 * n;
-}
-console.log(timeCar(1050));
-
-let amountFuel = (distance) => (distance * userCar.fuel / 100).toFixed(1);
-
-console.log(amountFuel(1050));
+userCar.amountFuel();
 
 
+console.log(userCar.checkDriver("Max"));
 
-/*for (let key in userCar) {
-  console.log(userCar[key]);};*/
+console.log(userCar.tripCar(1500));
 
-
-
- 
+console.log(userCar.amountFuel(100));
