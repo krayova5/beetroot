@@ -1,4 +1,3 @@
-
 /* Task 1. Напиши всі можливі варіанти створення функцій.
 
 1) function greet() {
@@ -22,77 +21,119 @@ console.log(getRectArea(24, 5));*/
 Покупка продукту.Функція приймає назву продукту і відзначає його як придбаний.
 
 Видалення продукту зі списку(видалення повинно проводитися шляхом створення нового масиву, в якому продукт, що ми шукаємо, буде відсутнім)
-Додавання покупки в список.Враховуй, що при додаванні покупки з уже існуючим в списку продуктом, необхідно збільшувати кількість в існуючій покупці, а не додавати нову.При цьому також повинна змінитися сума, наприклад, якщо ціна за одиницю 12, а кількості товарів стало 2, то сума буде 24.
-Максимум
 
-Підрахунок суми всіх продуктів(враховуючи кількість кожного) в списку.
-Підрахунок суми всіх(не) придбаних продуктів.
-Показання продуктів в залежності від суми, (від більшого до меншого / від меншого до більшого, в залежamount від параметра функції, який вона приймає)*/
+
+Додавання покупки в список.Враховуй, що при додаванні покупки з уже існуючим в списку продуктом, необхідно збільшувати кількість в існуючій покупці, а не додавати нову.При цьому також повинна змінитися сума, наприклад, якщо ціна за одиницю 12, а кількості товарів стало 2, то сума буде 24.
+Максимум*/
 
 const shoppingList = [
   {
-    nameProd: 'laundry detergent',
+    nameProd: "laundry detergent",
     amount: 2,
     price: 185,
-    purchased: true,
-    cost: function () {
-      return this.amount * this.price;
+    bought: true,
+    cost() {
+      let costProduct;
+      costProduct = this.amount * this.price;
+      return costProduct;
     },
   },
 
   {
-    nameProd: 'shampoo',
+    nameProd: "shampoo",
     amount: 2,
     price: 120,
-    purchased: true,
-    cost: function () {
-      return this.amount * this.price;
+    bought: true,
+    cost() {
+      let costProduct;
+      costProduct = this.amount * this.price;
+      return costProduct;
     },
   },
   {
-    nameProd: 'soap',
+    nameProd: "soap",
     amount: 6,
     price: 95,
-    purchased: false,
-    cost: function () {
-      return this.amount * this.price;
+    bought: false,
+    cost() {
+      let costProduct;
+      costProduct = this.amount * this.price;
+      return costProduct;
     },
   },
   {
-    nameProd: 'toothpaste',
+    nameProd: "toothpaste",
     amount: 3,
     price: 85,
-    purchased: true,
-    cost: function () {
-      return this.amount * this.price;
-    }
+    bought: true,
+    cost() {
+      let costProduct;
+      costProduct = this.amount * this.price;
+      return costProduct;
+    },
   },
   {
-    nameProd: 'foam for shave',
+    nameProd: "foam for shave",
     amount: 1,
     price: 130,
-    purchased: false,
+    bought: false,
     cost() {
-      return this.amount * this.price;
+      let costProduct;
+      costProduct = this.amount * this.price;
+      return costProduct;
     },
+  },
+];
 
 
+console.log(shoppingList);
+
+const res = shoppingList.slice();
+const compare = (someProduct, anotherProduct) => {
+  if (someProduct.bought === false && anotherProduct.bought === true) return -1;
+  if (someProduct.bought === true && anotherProduct.bought === false) return 1;
+  return 0;
+};
+
+console.log(res.sort(compare));
+
+const buyProduct = (name) => {
+  const product = {};
+  product.name = name;
+  product.amount = 1;
+  product.bought = true;
+  for (let item in res) {
+    const newProduct = res[item].name;
+    if (newProduct.toLowerCase() == name.toLowerCase()) {
+      res[item].bought = true;
+      break;
+    } else if (newProduct.toLowerCase() != name.toLowerCase()) {
+      res.unshift(product);
+      break;
+    }
   }
-]
+};
+buyProduct("Coconut oil");
+res.sort(compare);
 
-shoppingList.sort();
+/*const addPurchase = (name, amount, price) => {
+  let product = {};
+  product.name = name;
+  product.amount = amount;
+  product.price = price;
+  product.bought = true;
+  for (let i in res) {
+    const newProduct = res[i].name;
+    if (newProduct.toLowerCase() == name.toLowerCase()) {
+      res[i].amount += amount;
+      res[i].bought = true;
+      break;
+    } else if (newProduct.toLowerCase() != name.toLowerCase()) {
+      res.unshift(product);
+      break;
+    }
+  }
+  return res;
+};
 
-/*addProductToList() {
-  this.purchased = true;
-  this.amount += 1;
-  reloadOneProduct(this)
-  cost();
-}*/
-
-
-
-
-
-
-
-
+addPurchase("face cream", 1, 200);*/

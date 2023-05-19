@@ -42,15 +42,14 @@ userCar.showCar();
 
 userCar.giveDriver("Leon");
 
-userCar.checkDriver("Max");
+userCar.checkDriver();
 
 userCar.tripCar();
 
 userCar.amountFuel();
 
-
 console.log(userCar.checkDriver("Max"));
 
-console.log(userCar.tripCar(1500));
+console.log(userCar.tripCar(400));
 
-console.log(userCar.amountFuel(100));
+console.log(userCar.amountFuel(400));
