@@ -48,8 +48,6 @@ userCar.tripCar();
 
 userCar.amountFuel();
 
-console.log(userCar.checkDriver("Max"));
-
 console.log(userCar.tripCar(400));
 
 console.log(userCar.amountFuel(400));

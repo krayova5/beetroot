@@ -67,7 +67,8 @@ const btn = document.createElement("button");
 btn.style.border = "solid 2px";
 
 const paragraph = document.createElement("p");
-paragraph.textContent = "Open";
+paragraph.textContent = "Відкрити";
+paragraph.style.padding = "10px";
 btn.append(paragraph);
 container.append(btn);
 
@@ -75,11 +76,13 @@ btn.addEventListener("click", () => {
   const div = document.createElement("div");
   div.setAttribute("id", "modal__div");
   const p = document.createElement("p");
-  p.textContent = "Close it, please";
+  p.textContent = "Закрий мене, будь ласка";
   div.append(p);
   const innerBtn = document.createElement("button");
+  innerBtn.style.border = "solid 2px";
   const innerBtnParagraph = document.createElement("p");
-  innerBtnParagraph.textContent = "Close";
+  innerBtnParagraph.textContent = "Закрити";
+  innerBtnParagraph.style.padding = "10px";
   innerBtn.append(innerBtnParagraph);
   div.append(innerBtn);
   container.append(div);
@@ -100,14 +103,14 @@ const greenLight = document.getElementById("green");
 const button = document.getElementById("btn");
 
 button.addEventListener("click", function () {
-  if (redLight.classList.contains("traffic-red")) {
-    redLight.classList.remove("traffic-red");
-    yellowLight.classList.add("traffic-yellow");
-  } else if (yellowLight.classList.contains("traffic-yellow")) {
-    yellowLight.classList.remove("traffic-yellow");
-    greenLight.classList.add("traffic-green");
-  } else if (greenLight.classList.contains("traffic-green")) {
-    greenLight.classList.remove("traffic-green");
-    redLight.classList.add("traffic-red");
+  if (redLight.classList.contains("traffic__red")) {
+    redLight.classList.remove("traffic__red");
+    yellowLight.classList.add("traffic__yellow");
+  } else if (yellowLight.classList.contains("traffic__yellow")) {
+    yellowLight.classList.remove("traffic__yellow");
+    greenLight.classList.add("traffic__green");
+  } else if (greenLight.classList.contains("traffic__green")) {
+    greenLight.classList.remove("traffic__green");
+    redLight.classList.add("traffic__red");
   }
 });

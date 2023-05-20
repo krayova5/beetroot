@@ -113,27 +113,6 @@ const buyProduct = (name) => {
     }
   }
 };
+
 buyProduct("Coconut oil");
 res.sort(compare);
-
-/*const addPurchase = (name, amount, price) => {
-  let product = {};
-  product.name = name;
-  product.amount = amount;
-  product.price = price;
-  product.bought = true;
-  for (let i in res) {
-    const newProduct = res[i].name;
-    if (newProduct.toLowerCase() == name.toLowerCase()) {
-      res[i].amount += amount;
-      res[i].bought = true;
-      break;
-    } else if (newProduct.toLowerCase() != name.toLowerCase()) {
-      res.unshift(product);
-      break;
-    }
-  }
-  return res;
-};
-
-addPurchase("face cream", 1, 200);*/
