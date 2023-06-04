@@ -1,0 +1,29 @@
+@import "./normalize.scss";
+
+.my-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 1211px;
+
+  padding: 20px;
+  margin: 0 auto;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+
+  background: #ffffff;
+
+   .my-title {
+    text-align: center;
+    font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+  }
+}
+
