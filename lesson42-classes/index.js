@@ -36,7 +36,7 @@ console.log(ring.area().toFixed(2));
 console.log(ring.circumference().toFixed(2));
 
 
-/*Task 3 Реалізуй клас Employee, що описує працівника, і створи масив працівників банку.
+/*Task 2 Реалізуй клас Employee, що описує працівника, і створи масив працівників банку.
 
 Реалізуй клас EmpTable для генерації HTML - коду таблиці зі списком працівників банку.Масив працівників необхідно передавати через конструктор, а отримувати HTML - код за допомогою методу getHtml().
 
@@ -64,55 +64,30 @@ class Employee {
   }
 }
 const arrEmp = [
+  new Employee("John Doe", "Manager", "Sales", 5000),
+  new Employee("Bill Freeman", "Manager", "Sales", 5000),
+  new Employee("Uno Dirck", "Manager", "Sales", 5000),
+  new Employee("Erick Rapid", "Manager", "Sales", 5000),
+  new Employee("Chris Rea", "Manager", "Sales", 5000),
+  new Employee("Tommy Lee", "Manager", "Sales", 5000),
+  new Employee("Jeck Ward", "DevOps Engineer", "DevOps", 3500),
   new Employee(
-    "John Doe", 
-    "Manager", 
-    "Sales", 
-    5000),
+    "Rick Depper",
+    ".Net Senior Developer",
+    "Desktop Solutions",
+    4000
+  ),
+  new Employee("Neo Matrix", "Team Lead", "Desktop Solutions", 5000),
   new Employee(
-    "Bill Freeman", 
-    "Manager", 
-    "Sales", 
-    5000),
-  new Employee(
-    "Uno Dirck", 
-    "Manager", 
-    "Sales", 
-    5000),
-  new Employee(
-    "Erick Rapid", 
-    "Manager", 
-    "Sales", 
-    5000),
-  new Employee(
-    "Chris Rea", 
-    "Manager", 
-    "Sales", 
-    5000),
-  new Employee(
-    "Tommy Lee", 
-    "Manager", "Sales", 
-    5000),
-  new Employee(
-    "Jeck Ward", 
-    "DevOps Engineer", "DevOps", 
-    3500),
-  new Employee(
-    "Rick Depper", 
-    ".Net Senior Developer", "Desktop Solutions", 
-    4000),
-  new Employee(
-    "Neo Matrix", 
-    "Team Lead", "Desktop Solutions", 
-    5000),
-  new Employee(
-    "Trinity Matrix", 
-    ".Net Senior Developer", "Desktop Solutions", 
-    4000),
+    "Trinity Matrix",
+    ".Net Senior Developer",
+    "Desktop Solutions",
+    4000
+  ),
   new Employee(
     "Rick Grouy",
     ".Net Junior Developer",
-    "Desktop Solutions", 
+    "Desktop Solutions",
     1000
   ),
   new Employee(
@@ -157,11 +132,7 @@ const arrEmp = [
     "Desktop Solutions",
     4000
   ),
-  new Employee(
-    "Elon Musk", 
-    ".Net Senior Developer", 
-    "Desktop Solutions", 
-    4000),
+  new Employee("Elon Musk", ".Net Senior Developer", "Desktop Solutions", 4000),
 ];
 class EmpTable {
   constructor(arr) {
