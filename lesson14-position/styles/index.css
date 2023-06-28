@@ -1,0 +1,158 @@
+body {
+  
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.header { 
+  position: fixed;
+  width: inherit;
+  height: 80px;
+  z-index: 1;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  background: #FFFFFF;
+}
+
+.header__block {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin: 13px 120px 0px 120px;
+}
+
+.header__block-logo {
+  margin-left: 500px
+}
+
+.header__block-navigation {
+  font-family: 'Staatliches', cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.header__block-lang {
+  font-family: 'Tourney', cursive;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+.section__sidebar {
+  position: fixed;
+  width: 385px;
+  height: 462px;
+  left: 120px;
+  top: 150px;
+}
+
+.section__sidebar-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 70px;
+}
+
+.section__sidebar-list li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 0px 10px;
+  gap: 10px;
+  
+  width: 369px;
+  height: 58px;
+  border-bottom: 1px solid #BDBDBD;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 0px 90px;
+  gap: 70px;
+
+  position: relative;
+  width: 785px;
+  height: 2931px;
+  left: 535px;
+  top: 150px;
+  
+  background-image: url('../images/bg-picture.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-x: 80%;
+  background-position-y: 150%;  
+}
+
+.section__chapter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.section__chapter-head {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+  margin-top: 70px;
+}
+
+.section__chapter-head-title {
+  font-family: 'Francois One',sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 28px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.section__chapter-head-subtitle {
+  font-family: 'Farro', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+
+  color: #000000;
+}
+.section__chapter-text {
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 48px;
+  margin-top: 40px;
+  color: #000000;
+}
+.section__chapter-text-background {
+  background: #DADADA;
+ }
+
+ .section__image {
+  position: sticky;
+  left: 56.39%;
+  right: -9.17%;
+  top: 4.87%;
+  bottom: 70.46%;
+  background-size: contain;
+ }
+.block__heading-devider {
+  width: 100px;
+  height: 8px;
+  background-color: #000000;
+}

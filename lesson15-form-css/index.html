@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create an Account</title>
+    <link rel="stylesheet" href="/styles/normalize.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form class="form" action="#" method="get">
+      <h1 class="form__heading">Create an Account</h1>
+      <div class="form__item-name">
+        <div class="form__item-name-first">
+          <label class="form__item-label" for="first-name">First Name</label>
+          <input
+            class="form__item-input"
+            type="text"
+            name="first-name"
+            id="first-name"
+            placeholder=""
+          />
+        </div>
+        <div class="form__item-name-last">
+          <label class="form__item-label" for="last-name">Last Name</label>
+          <input
+            class="form__item-input"
+            type="text"
+            name="last-name"
+            id="last-name"
+          />
+        </div>
+      </div>
+      <div class="form__item-mail">
+        <label class="form__item-label" for="mail">E-mail</label>
+        <input
+          class="form__item-mail-input"
+          type="email"
+          name="mail"
+          id="mail"
+        />
+        <p>We'll never share your email with anyone else.</p>
+      </div>
+      <div class="form__item-point">  
+            <label class="form__item-point-radio" for="female">
+              <span class="form__item-point-radio-inner"></span>
+              <input
+              class="form__item-point-radio-input"
+              type="radio"
+              name="gender"
+              id="female"
+              />
+              <span class="form__item-label">Female</span>
+            </label>   
+            <label class="form__item-point-radio" for="male">
+              <span class="form__item-point-radio-inner"></span>
+              <input
+              class="form__item-point-radio-input"
+              type="radio"
+              name="gender"
+              id="male"
+              />
+              <span class="form__item-label">Male</span>
+            </label>        
+        </div>
+      </div>
+      <div class="form__item-location">
+        <div class="form__item-location-select">
+          <label class="form__item-label" for="country">Country</label>
+          <select class="form__item-select" name="country" id="country">
+            <option value="">Select</option>
+            <option value=""></option>
+          </select>
+          <svg
+            width="12"
+            height="14"
+            viewBox="0 0 12 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M6 0.25L0.75 5.5H11.25L6 0.25ZM6 13.75L0.75 8.5H11.25L6 13.75Z"
+              fill="#969696"
+            />
+          </svg>
+        </div>
+        <div class="form__item-location-geo">
+          <label class="form__item-label" for="city">City</label>
+          <input class="form__item-input" type="text" name="city" id="city" />
+        </div>
+      </div>
+      <button class="form__button" type="submit">Sign Up</button>
+      <div class="form__item-accept">
+        <p class="form__item-accept-paragraph">
+          By clicking the 'Sign Up' button, you confirm that you accept our
+          <br />
+          <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.
+        </p>
+      </div>
+      <hr class="form__item-line" />
+      <div class="form__item-logging">
+        <span class="form__item-logging-text">Have an account?</span>
+        <a class="" href="#">Log In</a>
+      </div>
+    </form>
+  </body>
+</html>

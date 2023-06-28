@@ -1,0 +1,25 @@
+.my-blog {
+  width: 810px;
+  height: 437px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 27px;
+  background: #d9d9d9;
+
+  .my-text {
+    width: 759px;
+    height: 70px;
+    background: #f9d7d7;
+  }
+
+  .my-title {
+    text-align: center;
+    font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+  }
+}

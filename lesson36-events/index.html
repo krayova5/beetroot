@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="./script.js"></script>
+  <script defer src="./sort.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Java Script Events</title>
+</head>
+
+<body>
+  <div>
+    <div>Press Ctrl + E to edit text. Then press Ctrl + S to save it</div>
+    <div class="show" id="displayText"></div>
+    <textarea class="hide" name="text" id="editText" cols="30" rows="10" autofocus>
+      </textarea>
+  </div>
+
+  <div>
+    <table>
+      <thead id="tableHeader">
+        <td id="nameHeader">Name</td>
+        <td id="heightHeader">Height</td>
+        <td id="placeHeader">Place</td>
+      </thead>
+      <tbody id="tableRows"></tbody>
+    </table>
+  </div>
+
+  <div>
+    <div id="changeSize"></div>
+  </div>
+  <script src="./index.js"></script>
+</body>
+
+</html>

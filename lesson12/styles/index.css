@@ -1,0 +1,93 @@
+.header__block {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin: 13px 120px 0px 120px;
+}
+
+.header__block-logo {
+  margin-left: 500px;
+}
+
+.header__block-navigation {
+  font-family: "Staatliches", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.header__block-lang {
+  font-family: "Tourney", cursive;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 0px 90px;
+  gap: 70px;
+  margin: 96px 120px 0px 120px;
+  background: #ffffff;
+}
+
+.section__chapter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.section__chapter-head {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+  margin-top: 70px;
+}
+
+.section__chapter-head-title {
+  font-family: "Francois One", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.section__chapter-head-subtitle {
+  font-family: "Farro", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+
+  color: #000000;
+}
+
+.section__chapter-text {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 48px;
+  margin-top: 40px;
+  color: #000000;
+}
+
+.section__chapter-text-background {
+  background: #dadada;
+}

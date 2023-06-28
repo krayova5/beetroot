@@ -1,0 +1,29 @@
+.my-header {
+  width: 1177px;
+  height: 48px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  padding: 0 26px;
+  background: #d9d9d9;
+
+  .my-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 19px;
+    .my-nav-item {
+      width: 46px;
+      height: 37px;
+      background: #e7efd6;
+    }
+  }
+
+  .logo {
+    width: 181px;
+    height: 37px;
+
+    background: #f1f2ae;
+  }
+}

@@ -5,15 +5,14 @@ body {
     font-weight: 400;
     
 }
+
 .header {
-    position: absolute;
-    width: 1440px;
-    height: 80px;
-    left: 0px;
-    top: 1px;
+    display: flex;
+  height: 80px;
+  
 }
 .header__content {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
