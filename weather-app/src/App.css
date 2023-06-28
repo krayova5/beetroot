@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+}
+
+.error__loc {
+  font-size: x-large;
+  color: rgb(22, 27, 78);
+  font-weight: bold;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: url("https://picsum.photos/1440/992?blur=1&&random=1.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
