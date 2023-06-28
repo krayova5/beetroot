@@ -1,0 +1,42 @@
+.my-header {
+  height: 44px;
+    left: 285px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.my-header__title {
+  font-family: 'Muli';
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.3px;
+
+  
+    color: #252733;
+}
+.my-header__icons {
+  display: flex;
+  gap: 10px;
+}
+.my-header__name {
+  font-family: 'Muli';
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+  
+    text-align: right;
+    letter-spacing: 0.2px;
+  
+    /* grayscale / black */
+  
+    color: #252733;
+  
+}
+.my-header__hero-img {
+  width: 44px;
+    height: 44px;
+  
+    border: 1.5px solid #DFE0EB;
+}
