@@ -9,7 +9,7 @@ import Weekly from "../../components/Weekly";
 
 import { WEATHER_FORECAST } from "../../Api";
 
-const WeeklyForecast = () => {
+const WeeklyPage = () => {
   const [weatherData, setWeatherData] = useState([]);
 
   useEffect(() => {
@@ -40,4 +40,4 @@ const WeeklyForecast = () => {
   );
 };
 
-export default WeeklyForecast;
+export default WeeklyPage;
