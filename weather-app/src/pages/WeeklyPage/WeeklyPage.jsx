@@ -1,5 +1,5 @@
 import React from "react";
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 
 import Card from "@mui/material/Card";
@@ -9,35 +9,35 @@ import Weekly from "../../components/Weekly";
 
 import { WEATHER_FORECAST } from "../../Api";
 
-const WeeklyPage = () => {
-  const [weekly, setWeekly] = useState([]);
+const WeeklyForecast = () => {
+  const [weatherData, setWeatherData] = useState([]);
 
   useEffect(() => {
-    const fetchWeekly = async () => {
+    const fetchWeeklyForecast = async () => {
       try {
-        const response = await axios.get(WEATHER_FORECAST);
-        const weeklyData = response.data;
        
-        setWeekly(weeklyData);
+        const response = await axios.get(WEATHER_FORECAST);
+        const { data } = response;
+
+        setWeatherData(data.list);
       } catch (error) {
         console.log(error);
       }
     };
 
-    fetchWeekly();
+    fetchWeeklyForecast();
   }, []);
-  
 
   return (
     <div className="container-page">
       <h2 className="container-page__title">Weekly forecast</h2>
       <Grid item xs={12}>
         <Card className="section">
-          <Weekly weekData={weekly} />
+          <Weekly weekData={weatherData} />
         </Card>
       </Grid>
     </div>
   );
 };
 
-export default WeeklyPage;
+export default WeeklyForecast;

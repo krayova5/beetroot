@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import "../../App.css";
 import axios from "axios";
+//components
 import Search from "../../components/Search";
-import { WEATHER_FORECAST } from "../../Api";
 import Weather from "../../components/Weather";
 import Loader from "../../components/Loader";
+
+//api
+import { WEATHER_FORECAST } from "../../Api";
 
 
 function CurrentPage() {
